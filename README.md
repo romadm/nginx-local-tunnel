@@ -19,7 +19,7 @@ cd nginx-local-tunnel
 docker build -t {DOCKERUSER}/dev-proxy . --build-arg ROOTPW={PASSWORD}
 
 # launch the container
-docker run -d -P 80:80 -p 2222:22 {DOCKERUSER}/dev-proxy
+docker run -d -p 80:80 -p 2222:22 {DOCKERUSER}/dev-proxy
 ```
 
 ## 2. On your dev machine, create a reverse tunnel with SSH
